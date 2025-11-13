@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Crop Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌾 Smart Crop System</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Suggest Crop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Smart Crop Recommendation System</h1>
+      <p>Helping farmers choose the right crop for better yield 🌱</p>
+      <button id="suggestBtn">Get Crop Suggestion</button>
+    </div>
+  </section>
+<div class="container">
+    <h2>🌾 Smart Crop Suggestion</h2>
+
+    <form id="cropForm">
+      <div class="input-group">
+        <label for="temp">🌡️ Temperature (°C)</label>
+        <input type="number" id="temp" placeholder="Enter temperature" required>
+      </div>
+
+      <div class="input-group">
+        <label for="rain">🌧️ Rainfall (mm)</label>
+        <input type="number" id="rain" placeholder="Enter rainfall" required>
+      </div>
+
+      <div class="input-group">
+        <label for="soil">🧪 Soil Type</label>
+        <select id="soil" required>
+          <option value="">Select Soil</option>
+          <option value="Sandy">Sandy</option>
+          <option value="Clay">Clay</option>
+          <option value="Loamy">Loamy</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="region">📍 Region / State</label>
+        <select id="region" required>
+          <option value="">Select Region</option>
+          <option value="North">North</option>
+          <option value="South">South</option>
+          <option value="East">East</option>
+          <option value="West">West</option>
+        </select>
+      </div>
+
+      <button type="submit">Get Recommended Crop</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+<div class="container">
+    <h2>🌿 Common Crops Information</h2>
+
+    <div class="crop-list">
+      <div class="crop-card">
+        <h3>🌾 Rice</h3>
+        <p>Needs high rainfall and warm climate.</p>
+      </div>
+
+      <div class="crop-card">
+        <h3>🌻 Sunflower</h3>
+        <p>Grows well in moderate temperature and dry soil.</p>
+      </div>
+
+      <div class="crop-card">
+        <h3>🌽 Maize</h3>
+        <p>Best growth in loamy soil with moderate rainfall.</p>
+      </div>
+
+      <div class="crop-card">
+        <h3>🥔 Potato</h3>
+        <p>Requires cool climate and well-drained soil.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
